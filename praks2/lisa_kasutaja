@@ -2,6 +2,6 @@
 #lisa kasutaja
 echo -n "Sisesta kasutajanimi: "
 read kasutajanimi
-useradd -m $kasutajanimi
+useradd $kasutajanimi -m -s /bin/bash
 #kustutab kasutaja parooli, kui see tekkis
 passwd --delete $kasutajanimi
